@@ -1,34 +1,59 @@
+<div class="app">
 
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #74992e;">
+      <a class="navbar-brand" routerLink="./assets/params/images/logo/favicon">
+        <span class="mr-1" style="color:rgb(252, 250, 250)">SupMti</span>
+        <img src="./assets/params/images/logo/ganatan.png" width="90" height="30" alt="ganatan">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">
+              <i class="fas fa-home mr-1"></i>home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/about">
+              <i class="far fa-question-circle mr-1"></i>About
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/contact">
+              <i class="fas fa-envelope mr-1"></i>Contact
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/signin">
+              <i class="fas fa-user mr-1"></i>Sign in
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/ziaritarik/E-Learning-.git">
+              <i class="fab fa-github mr-1"></i>Github
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-  <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-  <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-  <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-  <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
-</div>
-
-<div id="wrapper">
-
-<app-header></app-header>
-  <!--Main Content Area-->
-  <main id="content">
-
-  <app-intro> </app-intro>
-
-  <app-gallery></app-gallery>
-
-    <app-content></app-content>
-
-    <app-testimonials></app-testimonials>
-
-    <app-clients></app-clients>
-
-    <app-pricing></app-pricing>
-    <app-footer></app-footer>
+  <main>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
   </main>
-  <!--End Main Content Area-->
 
-
-
-</div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center text-white">&copy; 2020 - www.Elearing.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
